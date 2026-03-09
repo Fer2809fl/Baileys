@@ -1,5 +1,5 @@
 {
-  "name": "Baileys",
+  "name": "@fer2809fl/baileys",
   "version": "1.4.5",
   "description": "API de WhatsApp Web para Node.js",
   "keywords": [
