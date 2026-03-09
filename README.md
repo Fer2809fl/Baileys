@@ -2,12 +2,12 @@
 
 <img src="https://nexy-ar7z.b-cdn.net/storage/b99a0660.jpg" alt="Baileys" width="200" style="border-radius: 20px;"/>
 
-# @Fer280809/Baileys
+# @fer2809fl/baileys
 ### API de WhatsApp Web para Node.js
 
-[![npm version](https://img.shields.io/npm/v/@whiskeysockets/baileys?color=blueviolet&label=version)](https://github.com/Fer280809/Baileys)
+[![npm version](https://img.shields.io/npm/v/@fer2809fl/baileys?color=blueviolet&label=version)](https://www.npmjs.com/package/@fer2809fl/baileys)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Node.js](https://img.shields.io/badge/node-%3E%3D14-brightgreen)](https://nodejs.org)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-supported-blue)](https://www.typescriptlang.org)
 
 *Conéctate a WhatsApp Web directamente desde Node.js sin navegadores ni Selenium*
@@ -20,7 +20,7 @@
 
 ꕤ Esta librería está basada en Baileys. No está afiliada ni aprobada oficialmente por WhatsApp.
 
-> **@Fer280809/Baileys** y su desarrollador no se hacen responsables por el mal uso de esta librería.
+> **@fer2809fl/baileys** y su desarrollador no se hacen responsables por el mal uso de esta librería.
 > Úsala de forma responsable — nada de spam ni actividades maliciosas.
 
 ---
@@ -30,17 +30,17 @@
 Puedes instalarla de dos formas, ambas funcionan igual:
 
 ```bash
-# Con el paquete de este repo
-npm install @fer280809/Baileys
-yarn add @fer280809/Baileys
+# Desde npm
+npm install @fer2809fl/baileys
+yarn add @fer2809fl/baileys
 
-# Con el paquete original de whiskeysockets
+# También funciona con el paquete original
 npm install @whiskeysockets/baileys
 yarn add @whiskeysockets/baileys
 
 # Versión de desarrollo (última del repo)
-npm install github:Fer280809/Baileys
-yarn add github:Fer280809/Baileys
+npm install github:Fer2809fl/Baileys
+yarn add github:Fer2809fl/Baileys
 ```
 
 ---
@@ -49,7 +49,7 @@ yarn add github:Fer280809/Baileys
 
 ### JavaScript
 ```javascript
-const { makeWASocket, useMultiFileAuthState } = require('@Fer280809/Baileys')
+const { makeWASocket, useMultiFileAuthState } = require('@fer2809fl/baileys')
 
 async function startBot() {
     const { state, saveCreds } = await useMultiFileAuthState('session-mymelody')
@@ -81,7 +81,7 @@ startBot()
 
 ### TypeScript
 ```typescript
-import makeWASocket, { useMultiFileAuthState, DisconnectReason } from '@Fer280809/Baileys'
+import makeWASocket, { useMultiFileAuthState, DisconnectReason } from '@fer2809fl/baileys'
 import { Boom } from '@hapi/boom'
 
 async function startBot(): Promise<void> {
@@ -143,7 +143,7 @@ startBot()
 
 ```javascript
 // JavaScript
-const { makeWASocket, useMultiFileAuthState } = require('@Fer280809/Baileys')
+const { makeWASocket, useMultiFileAuthState } = require('@fer2809fl/baileys')
 
 const { state, saveCreds } = await useMultiFileAuthState('session-mymelody')
 const melody = makeWASocket({ auth: state, printQRInTerminal: true })
@@ -152,7 +152,7 @@ melody.ev.on('creds.update', saveCreds)
 
 ```typescript
 // TypeScript
-import makeWASocket, { useMultiFileAuthState } from '@Fer280809/Baileys'
+import makeWASocket, { useMultiFileAuthState } from '@fer2809fl/baileys'
 
 const { state, saveCreds } = await useMultiFileAuthState('session-mymelody')
 const melody = makeWASocket({ auth: state, printQRInTerminal: true })
@@ -327,7 +327,7 @@ async function broadcastMessage(jids, message) {
 
 ### Descargar medios recibidos
 ```javascript
-const { downloadMediaMessage } = require('@Fer280809/Baileys')
+const { downloadMediaMessage } = require('@fer2809fl/baileys')
 
 melody.ev.on('messages.upsert', async ({ messages }) => {
     const m = messages[0]
@@ -359,7 +359,7 @@ await melody.sendMessage(jid, {
 ## 📘 TypeScript — Tipos Personalizados
 
 ```typescript
-import makeWASocket, { WASocket, proto } from '@Fer280809/Baileys'
+import makeWASocket, { WASocket, proto } from '@fer2809fl/baileys'
 
 // Tipo para un mensaje con datos del remitente
 type MessageWithSender = proto.IWebMessageInfo & {
@@ -407,18 +407,14 @@ mi-bot/
 
 ## 🔗 Links
 
-- 📦 Repositorio: [github.com/Fer280809/Baileys](https://github.com/Fer280809/Baileys)
-- 🐛 Issues: [github.com/Fer280809/Baileys/issues](https://github.com/Fer280809/Baileys/issues)
+- 📦 npm: [npmjs.com/package/@fer2809fl/baileys](https://www.npmjs.com/package/@fer2809fl/baileys)
+- 💻 Repositorio: [github.com/Fer2809fl/Baileys](https://github.com/Fer2809fl/Baileys)
+- 🐛 Issues: [github.com/Fer2809fl/Baileys/issues](https://github.com/Fer2809fl/Baileys/issues)
 
 ---
 
 <div align="center">
 
-Desarrollado con 🤍 por [Fer280809](https://github.com/Fer280809)
-
----
-
-## Creditos a Melody-Xz
-
+Desarrollado con 🤍 por [Fer2809fl](https://github.com/Fer2809fl)
 
 </div>
