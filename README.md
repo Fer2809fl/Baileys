@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://nexy-ar7z.b-cdn.net/storage/b99a0660.jpg" alt="Baileys" width="200" style="border-radius: 20px;"/>
+<img src="https://raw.githubusercontent.com/Fer2809fl/Baileys/refs/heads/main/lib/Baileys.jpeg" alt="Baileys" width="500" style="border-radius: 20px;"/>
 
 # @fer2809fl/baileys
 ### API de WhatsApp Web para Node.js
